@@ -13,7 +13,8 @@ writing POD.
 Put the file F<pod-mode.el> into your load-path and the following into
 your F<~/.emacs>:
 
-    (require 'pod-mode)
+    (autoload 'pod-mode "pod-mode"
+      "Mode for editing POD files" t)
 
 To associate pod-mode with .pod files add the following to your
 F<~/.emacs>:
